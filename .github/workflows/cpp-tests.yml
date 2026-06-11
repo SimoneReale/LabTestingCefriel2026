@@ -15,19 +15,21 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Configure CMake
-      run: cmake -B build -S .
+      # Aggiungiamo esplicitamente il flag per generare i file in modalità Release
+      run: cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
 
     - name: Build
       run: cmake --build build --config Release
 
     - name: Run Tests (Level 1)
       working-directory: build
-      run: ctest -R level1 --output-on-failure
+      # Diciamo a CTest di cercare specificamente i test compilati in Release
+      run: ctest -C Release -R level1 --output-on-failure
 
     - name: Run Tests (Level 2)
       working-directory: build
-      run: ctest -R level2 --output-on-failure
+      run: ctest -C Release -R level2 --output-on-failure
 
     - name: Run Tests (Level 3)
       working-directory: build
-      run: ctest -R level3 --output-on-failure
+      run: ctest -C Release -R level3 --output-on-failure
