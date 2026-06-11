@@ -2,19 +2,19 @@
 
 Welcome to the introductory laboratory on **GoogleTest**. In this repository, you will find three exercises of increasing difficulty designed to help you learn how to test professional code.
 
-## 🛠 Prerequisites
+## Prerequisites
 Ensure you have the following installed:
 * **CMake** (version 3.14 or higher)
 * A C++ compiler (GCC, Clang, or MSVC)
 * **Git**
 
-## 📂 Repository Structure
+## Repository Structure
 The project is divided into three levels, each contained in its own directory:
 1. `level1_basic/`: Testing pure functions and basic input validation.
 2. `level2_intermediate/`: Testing classes with internal state and resource management.
 3. `level3_advanced/`: Using **Test Fixtures** (`TEST_F`) to manage complex test environments.
 
-## 🚀 Workflow
+## Workflow
 Your goal is to complete the missing test cases until the GitHub Actions pipeline turns "green".
 
 1. **Fork** this repository to your own GitHub account.
@@ -35,12 +35,12 @@ Your goal is to complete the missing test cases until the GitHub Actions pipelin
    ```
 6. **Push your changes**: Once all tests pass locally, `git push` your changes to your fork. GitHub Actions will automatically run the tests on the server. If your code is correct, the build status will become **Passing (green)**.
 
-## ⚠️ Guidelines for Level 3
+## Guidelines for Level 3
 For Level 3, you must define the `DatabaseTest` class yourself by inheriting from `testing::Test`. Make sure to:
 * Use the `protected:` access modifier so your test cases can access the database object.
 * Implement `SetUp()` and `TearDown()` to initialize and clean up your database before and after each test.
 * Ensure you define the `DatabaseTest` class **before** using any `TEST_F(DatabaseTest, ...)` macros.
 
-## 📚 References
+## References
 * [GoogleTest Primer Documentation](https://google.github.io/googletest/primer.html)
 * Refer to the provided course slides for the correct syntax of assertions (`EXPECT_EQ`, `ASSERT_NE`, etc.).
