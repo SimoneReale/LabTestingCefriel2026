@@ -1,9 +1,9 @@
 # Testing Laboratory
 
-Welcome to the introductory laboratory on **Testing**. In this repository, you will find three exercises of increasing difficulty designed to help you learn how to test professional code.
+Welcome to the Cefriel introductory laboratory on **Testing**. In this repository, you will find three exercises of increasing difficulty designed to help you learn how to test professional code.
 
 ## Prerequisites
-Ensure you have the following installed:
+In order to proceed locally ensure you have the following installed:
 * **CMake** (version 3.14 or higher)
 * A C++ compiler (GCC, Clang, or MSVC)
 * **Git**
