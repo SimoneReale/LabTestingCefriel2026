@@ -1,6 +1,6 @@
 # C++ Testing Laboratory: GoogleTest Primer
 
-Welcome to the introductory laboratory on **GoogleTest**. In this repository, you will find three exercises of increasing difficulty designed to help you learn how to test professional C++ code.
+Welcome to the introductory laboratory on **GoogleTest**. In this repository, you will find three exercises of increasing difficulty designed to help you learn how to test professional code.
 
 ## 🛠 Prerequisites
 Ensure you have the following installed:
